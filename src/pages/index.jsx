@@ -2,10 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import Script from "next/script";
+import styles from "../components/home.module.css";
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.container}>
       <Head>
         <link
           rel="shortcut icon"
@@ -15,22 +16,15 @@ export default function Home() {
         <title>Welcome to next!</title>
       </Head>
 
-      <Script
-        src="https://connect.facebook.net/en_US/sdk.js"
-        strategy="lazyOnload"
-        onLoad={() =>
-          console.log(`script loaded correctly, window.FB has been populated`)
-        }
-      />
-      
       <h1>This is the Home page</h1>
       <Image
         src="/images/profil_pic.png"
         width={241}
         height={218}
         alt="Hello world!"
+        className={styles.image}
       />
       <Link href="/blog">Blog</Link>
-    </>
+    </div>
   );
 }
