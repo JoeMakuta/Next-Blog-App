@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  object-fit: cover;
+}
