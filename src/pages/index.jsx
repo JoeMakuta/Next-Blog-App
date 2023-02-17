@@ -17,13 +17,15 @@ export default function Home() {
       </Head>
 
       <h1>This is the Home page</h1>
-      <Image
-        src="/images/profil_pic.png"
-        width={241}
-        height={218}
-        alt="Hello world!"
-        className={styles.image}
-      />
+      <div className={styles.image_container} >
+        <Image
+          src="/images/profil_pic.png"
+          width={241}
+          height={218}
+          alt="Hello world!"
+          className={styles.image}
+        />
+      </div>
       <Link href="/blog">Blog</Link>
     </div>
   );
