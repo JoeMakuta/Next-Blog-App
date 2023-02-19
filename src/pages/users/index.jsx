@@ -1,3 +1,4 @@
+import User from "@/components/user";
 import Link from "next/link";
 
 const UsersList = (props) => {
@@ -7,7 +8,7 @@ const UsersList = (props) => {
       {props.users.map((user, index) => {
         return (
           <div key={index}>
-            <p>User {index+1}: {user.username}</p>
+            <User user={user} index={index}></User>
           </div>
         );
       })}
