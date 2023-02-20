@@ -1,5 +1,6 @@
 import User from "@/components/user";
 import Link from "next/link";
+import styles from "../../components/user.module.css"
 
 const UsersList = (props) => {
   return (
@@ -7,7 +8,7 @@ const UsersList = (props) => {
       <h1>List of users</h1>
       {props.users.map((user, index) => {
         return (
-          <div key={index}>
+          <div key={index} className={styles.container} >
             <User user={user} index={index}></User>
           </div>
         );
