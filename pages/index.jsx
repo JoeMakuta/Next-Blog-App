@@ -13,20 +13,21 @@ export default function Home() {
           href="/images/profil_pic.png"
           type="image/x-icon"
         />
-        <title>Welcome to next!</title>
+        <title>Blog App by Joe Makuta</title>
       </Head>
 
       <h1>This is the Home page</h1>
-      <div className={styles.image_container} >
+      <div className={styles.image_container}>
         <Image
-          src="/images/profil_pic.png"
+          src={"/images/profil_pic.png"}
           width={241}
           height={218}
-          alt="Hello world!"
+          alt="Josh pic"
           className={styles.image}
         />
       </div>
       <Link href="/blog">Blog</Link>
+      <Link href="/posts">Posts</Link>
     </div>
   );
 }
