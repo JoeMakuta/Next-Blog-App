@@ -32,7 +32,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      posts: response.slice(0, 5),
+      posts: response.slice(0, 10),
     },
   };
 };
