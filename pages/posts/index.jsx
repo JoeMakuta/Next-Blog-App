@@ -1,4 +1,9 @@
 import Link from "next/link";
+import { Suspense } from "react";
+
+export const Loader = () => {
+  return <div>Loading ...</div>;
+};
 
 const Posts = ({ posts }) => {
   return (
@@ -13,7 +18,7 @@ const Posts = ({ posts }) => {
           </div>
         );
       })}
-      <Link href={"/"} >Home</Link>
+      <Link href={"/"}>Home</Link>
     </div>
   );
 };
@@ -21,11 +26,13 @@ const Posts = ({ posts }) => {
 export default Posts;
 
 export const getStaticProps = async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const data = await response.json();
+  const response = await fetch(
+    "https://jsonplaceholder.typicode.com/posts"
+  ).then((data) => data.json());
+
   return {
     props: {
-      posts: data.slice(0,5),
+      posts: response.slice(0, 5),
     },
   };
 };
