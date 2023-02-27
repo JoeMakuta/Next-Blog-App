@@ -19,10 +19,10 @@ const SinglePost = ({ post }) => {
 export default SinglePost;
 
 export const getStaticPaths = async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const response = await fetch("http://localhost:4000/posts");
   const data = await response.json();
 
-  const paths = data.slice(0, 5).map((elt, index) => {
+  const paths = data.slice(0, 2).map((elt, index) => {
     return {
       params: {
         postId: `${elt?.id}`,
@@ -49,7 +49,6 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-
   if (0 > context.params.postId || context.params.postId > 10) {
     return {
       notFound: true,
@@ -59,7 +58,7 @@ export const getStaticProps = async (context) => {
   console.log("Context : ", context);
 
   const response = await fetch(
-    `https://jsonplaceholder.typicode.com/posts/${context.params.postId}`
+    `http://localhost:4000/posts/${context.params.postId}`
   );
 
   const data = await response.json();
@@ -69,7 +68,7 @@ export const getStaticProps = async (context) => {
       notFound: true,
     };
   }
-  
+
   return {
     props: {
       post: data,

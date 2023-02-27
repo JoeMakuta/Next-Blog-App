@@ -26,13 +26,13 @@ const Posts = ({ posts }) => {
 export default Posts;
 
 export const getStaticProps = async () => {
-  const response = await fetch(
-    "https://jsonplaceholder.typicode.com/posts"
-  ).then((data) => data.json());
+  const response = await fetch("http://localhost:4000/posts").then((data) =>
+    data.json()
+  );
 
   return {
     props: {
-      posts: response.slice(0, 10),
+      posts: response,
     },
   };
 };
