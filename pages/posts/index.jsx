@@ -26,6 +26,7 @@ const Posts = ({ posts }) => {
 export default Posts;
 
 export const getStaticProps = async () => {
+  console.log("Revalidating called ...");
   const response = await fetch("http://localhost:4000/posts").then((data) =>
     data.json()
   );
@@ -34,6 +35,6 @@ export const getStaticProps = async () => {
     props: {
       posts: response,
     },
-    revalidate: 20,
+    revalidate: 10,
   };
 };
