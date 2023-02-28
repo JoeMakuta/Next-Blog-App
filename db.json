@@ -2,19 +2,19 @@
   "news": [
     {
       "id" : 1,
-      "title": "Hello world ...",
+      "title": "First aticle",
       "description": "Hello world, did you know that everyone on this earth is supposed to die one day ? So to prevent death from reaching you, you need to learn programming ... This is the only way your daeth might not be wasted.",
       "category": " Life changing"
     },
     {
       "id" : 2,
-      "title": "Hello world ...",
+      "title": "Second article ...",
       "description": "Hello world, did you know that everyone on this earth is supposed to die one day ? So to prevent death from reaching you, you need to learn programming ... This is the only way your daeth might not be wasted.",
       "category": " Life changing"
     },
     {
       "id" : 3,
-      "title": "Hello world ...",
+      "title": "Third article",
       "description": "Hello world, did you know that everyone on this earth is supposed to die one day ? So to prevent death from reaching you, you need to learn programming ... This is the only way your daeth might not be wasted.",
       "category": " Life changing"
     }

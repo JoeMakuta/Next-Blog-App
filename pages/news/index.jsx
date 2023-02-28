@@ -7,16 +7,13 @@ const News = ({ news }) => {
       <div>
         {news.map((article) => {
           return (
-            <div key={article.id}>
-              <h2>Article {article.id}</h2>
-              <h3>{article.title}</h3>
-              <p>{article.description}</p>
-              <p>Category : {article.category}</p>
-            </div>
+            <Link key={article.id} href={`/news/${article.id}`}>
+              <h2>Article {article.id} : {article.title}</h2>
+             
+            </Link>
           );
         })}
       </div>
-      <Link href="/">Home</Link>
     </div>
   );
 };
