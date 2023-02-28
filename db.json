@@ -1,4 +1,21 @@
 {
+  "news": [
+    {
+      "title": "Hello world ...",
+      "description": "Hello world, did you know that everyone on this earth is supposed to die one day ? So to prevent death from reaching you, you need to learn programming ... This is the only way your daeth might not be wasted.",
+      "category": " Life changing"
+    },
+    {
+      "title": "Hello world ...",
+      "description": "Hello world, did you know that everyone on this earth is supposed to die one day ? So to prevent death from reaching you, you need to learn programming ... This is the only way your daeth might not be wasted.",
+      "category": " Life changing"
+    },
+    {
+      "title": "Hello world ...",
+      "description": "Hello world, did you know that everyone on this earth is supposed to die one day ? So to prevent death from reaching you, you need to learn programming ... This is the only way your daeth might not be wasted.",
+      "category": " Life changing"
+    }
+  ],
   "posts": [
     {
       "id": 1,
