@@ -9,7 +9,6 @@ const News = ({ news }) => {
           return (
             <Link key={article.id} href={`/news/${article.id}`}>
               <h2>Article {article.id} : {article.title}</h2>
-             
             </Link>
           );
         })}
