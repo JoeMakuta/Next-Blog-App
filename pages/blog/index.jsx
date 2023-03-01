@@ -16,7 +16,6 @@ const Blog = () => {
           );
         })}
       </ul>
-      <Link href="/">Home</Link>
     </div>
   );
 };

@@ -18,7 +18,6 @@ const Posts = ({ posts }) => {
           </div>
         );
       })}
-      <Link href={"/"}>Home</Link>
     </div>
   );
 };
