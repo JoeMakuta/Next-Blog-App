@@ -6,7 +6,7 @@ import styles from "../components/home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div >
       <Head>
         <link
           rel="shortcut icon"
@@ -28,6 +28,7 @@ export default function Home() {
       </div>
       <Link href="/blog">Blog</Link>
       <Link href="/posts">Posts</Link>
+      <Link href="/news">News</Link>
     </div>
   );
 }

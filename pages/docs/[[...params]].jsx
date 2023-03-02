@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 
 const Docs = () => {
   const { params = [] } = useRouter().query;
+  const router = useRouter();
 
   if (params.length === 1) {
     return (
@@ -17,13 +18,15 @@ const Docs = () => {
         </h1>
       </div>
     );
+  } else if (params.length > 2) {
+    router.push("/404");
+  } else {
+    return (
+      <div>
+        <h1>Docs for the blog app</h1>
+      </div>
+    );
   }
-
-  return (
-    <div>
-      <h1>Docs for the blog app</h1>
-    </div>
-  );
 };
 
 export default Docs;
